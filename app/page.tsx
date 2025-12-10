@@ -99,7 +99,8 @@ const galleryItems: GalleryItem[] = [
 
 // fallback jika gambar belum ada di public/gallery
 const galleryFallback =
-  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop";
+  "https://drive.google.com/uc?export=view&id=12A_sXfbgw-XxMRH98-dOosRUngeK9PoW
+";
 
 // ---------- DATA ANGGOTA KELAS (30 siswa, 10 halaman @3 siswa) ----------
 type Member = {
