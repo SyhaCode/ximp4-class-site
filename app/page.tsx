@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-// --- Small helpers ---
 function useCountUp(target = 0, duration = 1200, startWhenVisible = true) {
   const [value, setValue] = useState(0);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -49,7 +48,6 @@ function useCountUp(target = 0, duration = 1200, startWhenVisible = true) {
   return { ref, value };
 }
 
-// ---------- DATA STRUKTUR KELAS ----------
 const roles = [
   { role: "Wali Kelas", name: "windra", img: "https://i.pravatar.cc/150?img=1" },
   { role: "Ketua Kelas", name: "ara", img: "https://i.pravatar.cc/150?img=2" },
@@ -72,11 +70,10 @@ const links = {
   instagram: "https://instagram.com/",
   confess: "https://example.com/confess",
   tiktok: "https://tiktok.com/@",
-  vidio: "https://example.com/playlist", // ganti ke link Google Drive/YouTube-mu
-  instagramVann: "https://instagram.com/van_nnn",
+  vidio: "https://example.com/playlist",
+  instagramVann: "https://www.instagram.com/vantad22?igsh=MTFkMTltbm1wamhjag==",
 };
 
-// ---------- GALLERY DATA: 12 FOTO + LABEL ACARA ----------
 type GalleryItem = {
   src: string;
   label: string;
@@ -97,12 +94,10 @@ const galleryItems: GalleryItem[] = [
   { src: "/gallery/kelas-12.jpg", label: "Momen Random di Kelas" },
 ];
 
-// fallback jika gambar belum ada di public/gallery
 const galleryFallback =
   "https://drive.google.com/uc?export=view&id=12A_sXfbgw-XxMRH98-dOosRUngeK9PoW
 ";
 
-// ---------- DATA ANGGOTA KELAS (30 siswa, 10 halaman @3 siswa) ----------
 type Member = {
   id: number;
   name: string;
@@ -332,7 +327,6 @@ const classMembers: Member[] = [
   },
 ];
 
-// ---------- KOMPONEN KECIL ----------
 function NavLink({
   href,
   children,
@@ -427,7 +421,6 @@ function SocialBlock() {
   );
 }
 
-// ---------- PAGE UTAMA ----------
 export default function XIMP4Site() {
   const { ref: totalRef, value: total } = useCountUp(30);
   const { ref: boysRef, value: boys } = useCountUp(15);
