@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
+// --- Small helpers ---
 function useCountUp(target = 0, duration = 1200, startWhenVisible = true) {
   const [value, setValue] = useState(0);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -48,6 +49,7 @@ function useCountUp(target = 0, duration = 1200, startWhenVisible = true) {
   return { ref, value };
 }
 
+// ---------- DATA STRUKTUR KELAS ----------
 const roles = [
   { role: "Wali Kelas", name: "windra", img: "https://i.pravatar.cc/150?img=1" },
   { role: "Ketua Kelas", name: "ara", img: "https://i.pravatar.cc/150?img=2" },
@@ -69,11 +71,12 @@ const bendahara2 = roles.find((r) => r.role === "Bendahara 2");
 const links = {
   instagram: "https://instagram.com/",
   confess: "https://example.com/confess",
-  tiktok: "https://tiktok.com/@yanz5884",
-  vidio: "https://instagram.com/reel/DQ33Kwnkxtv/?igsh=b3B4MjduczN2czNp",
-  instagramVann: "https://instagram.com/vantad22?igsh=MTFkMTltbm1wamhjag==",
+  tiktok: "https://tiktok.com/@",
+  vidio: "https://example.com/playlist", // ganti ke link Google Drive/YouTube-mu
+  instagramVann: "https://instagram.com/van_nnn",
 };
 
+// ---------- GALLERY DATA: 12 FOTO + LABEL ACARA ----------
 type GalleryItem = {
   src: string;
   label: string;
@@ -94,10 +97,11 @@ const galleryItems: GalleryItem[] = [
   { src: "/gallery/kelas-12.jpg", label: "Momen Random di Kelas" },
 ];
 
+// fallback jika gambar belum ada di public/gallery
 const galleryFallback =
-  "https://drive.google.com/uc?export=view&id=12A_sXfbgw-XxMRH98-dOosRUngeK9PoW
-";
+  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop";
 
+// ---------- DATA ANGGOTA KELAS (30 siswa, 10 halaman @3 siswa) ----------
 type Member = {
   id: number;
   name: string;
@@ -327,6 +331,7 @@ const classMembers: Member[] = [
   },
 ];
 
+// ---------- KOMPONEN KECIL ----------
 function NavLink({
   href,
   children,
@@ -421,6 +426,7 @@ function SocialBlock() {
   );
 }
 
+// ---------- PAGE UTAMA ----------
 export default function XIMP4Site() {
   const { ref: totalRef, value: total } = useCountUp(30);
   const { ref: boysRef, value: boys } = useCountUp(15);
@@ -511,13 +517,13 @@ export default function XIMP4Site() {
           <div className="relative mt-12 md:mt-16">
             <div
               aria-hidden
-              className=""
+              className="bg-gradient-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
             />
             <div className="inset-shadow-2xs ring-background bg-background relative mx-auto max-w-4xl overflow-hidden rounded-2xl border p-3 shadow-lg shadow-zinc-950/15 ring-1">
               {/* Dark */}
               <img
                 className="bg-background aspect-[16/9] relative hidden rounded-2xl dark:block"
-                src="https://drive.google.com/uc?export=view&id=12A_sXfbgw-XxMRH98-dOosRUngeK9PoW"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
                 alt="kelas preview"
                 width={1600}
                 height={900}
@@ -525,7 +531,7 @@ export default function XIMP4Site() {
               {/* Light */}
               <img
                 className="z-2 border-border/25 aspect-[16/9] relative rounded-2xl border dark:hidden"
-                src="https://drive.google.com/uc?export=view&id=12A_sXfbgw-XxMRH98-dOosRUngeK9PoW"
+                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1600&auto=format&fit=crop"
                 alt="kelas preview"
                 width={1600}
                 height={900}
@@ -1061,4 +1067,4 @@ export default function XIMP4Site() {
       </footer>
     </div>
   );
-}
+   }
