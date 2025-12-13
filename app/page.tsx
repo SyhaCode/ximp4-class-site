@@ -72,8 +72,8 @@ const links = {
   instagram: "https://instagram.com/",
   confess: "https://example.com/confess",
   tiktok: "https://tiktok.com/@",
-  vidio: "https://example.com/playlist", // ganti ke link Google Drive/YouTube-mu
-  instagramVann: "https://instagram.com/van_nnn",
+  vidio: "https://www.instagram.com/reel/DQ33Kwnkxtv/?igsh=b3B4MjduczN2czNp", // ganti ke link Google Drive/YouTube-mu
+  instagramVann: "https://www.instagram.com/vantad22?igsh=MTFkMTltbm1wamhjag==",
 };
 
 // ---------- GALLERY DATA: 12 FOTO + LABEL ACARA ----------
@@ -83,7 +83,7 @@ type GalleryItem = {
 };
 
 const galleryItems: GalleryItem[] = [
-  { src: "/gallery/kelas-1.jpg", label: "Foto Kelas – Hari Pertama" },
+  { src: "/gallery/kelas-1.jpg", label: "masak masak" },
   { src: "/gallery/kelas-2.jpg", label: "Upacara Bendera" },
   { src: "/gallery/kelas-3.jpg", label: "MPLS / MOS" },
   { src: "/gallery/kelas-4.jpg", label: "Kegiatan Praktek" },
@@ -99,7 +99,7 @@ const galleryItems: GalleryItem[] = [
 
 // fallback jika gambar belum ada di public/gallery
 const galleryFallback =
-  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop";
+  "https://drive.google.com/file/d/1yN4TdGxOqr34NS4NChC91qOIc7bYA4Az/view?usp=drivesdk";
 
 // ---------- DATA ANGGOTA KELAS (30 siswa, 10 halaman @3 siswa) ----------
 type Member = {
@@ -113,16 +113,16 @@ type Member = {
 const classMembers: Member[] = [
   {
     id: 1,
-    name: "Ara",
-    role: "KETUA KELAS",
+    name: "Evann",
+    role: "MC",
     img: "https://i.pravatar.cc/150?img=11",
     quote:
       "Kalau kita kompak, tugas seberat apa pun bisa kerasa lebih ringan bareng-bareng.",
   },
   {
     id: 2,
-    name: "Arya",
-    role: "WAKIL KELAS",
+    name: "Ara",
+    role: "Ketua KELAS",
     img: "https://i.pravatar.cc/150?img=12",
     quote:
       "Nggak apa-apa capek, yang penting kita tetap saling jaga dan saling dorong buat maju.",
