@@ -69,9 +69,9 @@ const bendahara2 = roles.find((r) => r.role === "Bendahara 2");
 const links = {
   instagram: "https://instagram.com/",
   confess: "https://example.com/confess",
-  tiktok: "https://tiktok.com/@",
-  vidio: "https://example.com/playlist",
-  instagramVann: "https://www.instagram.com/vantad22?igsh=MTFkMTltbm1wamhjag==",
+  tiktok: "https://tiktok.com/@yanz5884",
+  vidio: "https://instagram.com/reel/DQ33Kwnkxtv/?igsh=b3B4MjduczN2czNp",
+  instagramVann: "https://instagram.com/vantad22?igsh=MTFkMTltbm1wamhjag==",
 };
 
 type GalleryItem = {
@@ -511,13 +511,13 @@ export default function XIMP4Site() {
           <div className="relative mt-12 md:mt-16">
             <div
               aria-hidden
-              className="bg-gradient-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
+              className=""
             />
             <div className="inset-shadow-2xs ring-background bg-background relative mx-auto max-w-4xl overflow-hidden rounded-2xl border p-3 shadow-lg shadow-zinc-950/15 ring-1">
               {/* Dark */}
               <img
                 className="bg-background aspect-[16/9] relative hidden rounded-2xl dark:block"
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+                src="https://drive.google.com/uc?export=view&id=12A_sXfbgw-XxMRH98-dOosRUngeK9PoW"
                 alt="kelas preview"
                 width={1600}
                 height={900}
@@ -525,7 +525,7 @@ export default function XIMP4Site() {
               {/* Light */}
               <img
                 className="z-2 border-border/25 aspect-[16/9] relative rounded-2xl border dark:hidden"
-                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1600&auto=format&fit=crop"
+                src="https://drive.google.com/uc?export=view&id=12A_sXfbgw-XxMRH98-dOosRUngeK9PoW"
                 alt="kelas preview"
                 width={1600}
                 height={900}
