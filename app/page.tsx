@@ -83,11 +83,28 @@ type GalleryItem = {
 };
 
 const galleryItems: GalleryItem[] = [
-  { src: "/gallery/kelas-1.jpg", label: "masak masak" },
-  { src: "/gallery/kelas-2.jpg", label: "Upacara Bendera" },
-  { src: "/gallery/kelas-3.jpg", label: "MPLS / MOS" },
-  { src: "/gallery/kelas-4.jpg", label: "Kegiatan Praktek" },
-  { src: "/gallery/kelas-5.jpg", label: "Latihan Upacara" },
+  {
+    src: "https://drive.google.com/uc?export=view&id=1yN4TdGxOqr34NS4NChC91qOIc7bYA4Az",
+    label: "Gallery 1 – XI-MP-4",
+  },
+  {
+    src: "https://drive.google.com/uc?export=view&id=1UV6m32bR4ipL1AuzF6CVCppZUrlQuWoa",
+    label: "Gallery 2 – XI-MP-4",
+  },
+  {
+    src: "https://drive.google.com/uc?export=view&id=1QCBq-FchnXhSz9k6xEVwkGN-tAIEch-y",
+    label: "Gallery 3 – XI-MP-4",
+  },
+  {
+    src: "https://drive.google.com/uc?export=view&id=1PuEh3xwzHtPG_QWxuMOZcnalGNzexJD5",
+    label: "Gallery 4 – XI-MP-4",
+  },
+  {
+    src: "https://drive.google.com/uc?export=view&id=1WlRWsp2nCa-pr7UclEJqkMrEFpzZxVaQ",
+    label: "Gallery 5 – XI-MP-4",
+  },
+
+  // sisanya boleh dibiarkan pakai foto default lama:
   { src: "/gallery/kelas-6.jpg", label: "Study Tour" },
   { src: "/gallery/kelas-7.jpg", label: "Class Meeting" },
   { src: "/gallery/kelas-8.jpg", label: "Lomba 17 Agustus" },
@@ -96,6 +113,7 @@ const galleryItems: GalleryItem[] = [
   { src: "/gallery/kelas-11.jpg", label: "Dokumentasi Ekstrakurikuler" },
   { src: "/gallery/kelas-12.jpg", label: "Momen Random di Kelas" },
 ];
+
 
 // fallback jika gambar belum ada di public/gallery
 const galleryFallback =
