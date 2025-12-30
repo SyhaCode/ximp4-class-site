@@ -83,31 +83,9 @@ type GalleryItem = {
 };
 
 const galleryItems: GalleryItem[] = [
-  {
-    src: "https://drive.google.com/uc?export=view&id=1yN4TdGxOqr34NS4NChC91qOIc7bYA4Az",
-    label: "Gallery 1 – XI-MP-4",
-  },
-  {
-    src: "https://drive.google.com/uc?export=view&id=1UV6m32bR4ipL1AuzF6CVCppZUrlQuWoa",
-    label: "Gallery 2 – XI-MP-4",
-  },
-  {
-    src: "https://drive.google.com/uc?export=view&id=1QCBq-FchnXhSz9k6xEVwkGN-tAIEch-y",
-    label: "Gallery 3 – XI-MP-4",
-  },
-  {
-    src: "https://drive.google.com/uc?export=view&id=1PuEh3xwzHtPG_QWxuMOZcnalGNzexJD5",
-    label: "Gallery 4 – XI-MP-4",
-  },
-  {
-    src: "https://drive.google.com/uc?export=view&id=1WlRWsp2nCa-pr7UclEJqkMrEFpzZxVaQ",
-    label: "Gallery 5 – XI-MP-4",
-  },
-
-  // sisanya boleh dibiarkan pakai foto default lama:
-  { src: "/gallery/kelas-6.jpg", label: "Study Tour" },
-  { src: "/gallery/kelas-7.jpg", label: "Class Meeting" },
-  { src: "/gallery/kelas-8.jpg", label: "Lomba 17 Agustus" },
+  { src: "/gallery/IMG_20251227_220454.jpg", label: "Audisi" },
+  { src: "/gallery/IMG_20251227_220808.jpg", label: "Class Meeting" },
+  { src: "/gallery/IMG_20251227_221511.jpg", label: "Lomba 17 Agustus" },
   { src: "/gallery/kelas-9.jpg", label: "Pentas Seni" },
   { src: "/gallery/kelas-10.jpg", label: "Foto Akhir Semester" },
   { src: "/gallery/kelas-11.jpg", label: "Dokumentasi Ekstrakurikuler" },
