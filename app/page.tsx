@@ -84,8 +84,8 @@ type GalleryItem = {
 
 const galleryItems: GalleryItem[] = [
   { src: "/gallery/IMG_20251227_220454.jpg", label: "Audisi" },
-  { src: "/gallery/IMG_20251227_220808.jpg", label: "Class Meeting" },
-  { src: "/gallery/IMG_20251227_221511.jpg", label: "Lomba 17 Agustus" },
+  { src: "/gallery/IMG_20251227_220808.jpg", label: "KorbanHujan.mp4" },
+  { src: "/gallery/IMG_20251227_221511.jpg", label: "masak-masak" },
   { src: "/gallery/kelas-9.jpg", label: "Pentas Seni" },
   { src: "/gallery/kelas-10.jpg", label: "Foto Akhir Semester" },
   { src: "/gallery/kelas-11.jpg", label: "Dokumentasi Ekstrakurikuler" },
