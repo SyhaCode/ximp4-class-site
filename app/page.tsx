@@ -541,7 +541,7 @@ export default function XIMP4Site() {
               {/* Dark */}
               <img
                 className="bg-background aspect-[16/9] relative hidden rounded-2xl dark:block"
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+                src="/gallery/IMG_20251227_220535.jpg"
                 alt="kelas preview"
                 width={1600}
                 height={900}
@@ -549,7 +549,7 @@ export default function XIMP4Site() {
               {/* Light */}
               <img
                 className="z-2 border-border/25 aspect-[16/9] relative rounded-2xl border dark:hidden"
-                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1600&auto=format&fit=crop"
+                src="/gallery/IMG_20251227_220535.jpg"
                 alt="kelas preview"
                 width={1600}
                 height={900}
