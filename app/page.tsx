@@ -69,9 +69,9 @@ const bendahara1 = roles.find((r) => r.role === "Bendahara 1");
 const bendahara2 = roles.find((r) => r.role === "Bendahara 2");
 
 const links = {
-  instagram: "https://instagram.com/",
+  instagram: "https://www.instagram.com/classsxlmp4?igsh=bTA3emg1aWZrOTU4",
   confess: "https://example.com/confess",
-  tiktok: "https://tiktok.com/@",
+  tiktok: "https://www.tiktok.com/@yanz5884?_r=1&_t=ZS-92e1Bog2CU4",
   vidio: "https://www.instagram.com/reel/DQ33Kwnkxtv/?igsh=b3B4MjduczN2czNp", // ganti ke link Google Drive/YouTube-mu
   instagramVann: "https://www.instagram.com/vantad22?igsh=MTFkMTltbm1wamhjag==",
 };
